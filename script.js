@@ -1,3 +1,4 @@
+// testing the json parse and stringify
 const friend1 = {name:"jasdeep"};
 const friend2 = {name:"jasmeet"};
 const friend3 = {name:"singh"};
@@ -33,7 +34,7 @@ xml.onload = function(){
 xml.send();
 console.log(xml);
 
-
+//Fetching an API from Json.json
 fetch(url).then(function(res){
     console.log(res);
     return res.json();
@@ -51,6 +52,7 @@ var button = document.querySelector(".button");
 
 button.addEventListener("click", function(){
 
+    // Fetching an API from RandomUser
     var url = "https://randomuser.me/api/?results=10";
 fetch (url).then(function(response){
 return response.json()
